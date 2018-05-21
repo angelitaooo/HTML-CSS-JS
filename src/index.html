@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
-  <title>Page Title</title>
+  <title>HTML CSS and JS exercise</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-  <script src="main.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
 <body>
-  <div>
-    <nav>
-      <div class="main-nav">
+  <section class="nav-wrapper">
+    <!-- Main Nav -->
+    <section class="full-width full-width--main-nav">
+      <nav class="main-nav container">
         <h1>logo</h1>
-        <div class="nav-options">
-          <a>Transitions and Transforms</a>
-          <a>otros</a>
-          <a>Slider</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <a href="">option 1</a>
-        <a href="">option 2</a>
-      </div>
-    </nav>
-    <main>
-      <section class="main-info">
-        <h3>HOSTING OPTIONS</h3>
-        <h1>In the Cloud or Behind Your Firewall</h1>
-        <h2>We can host continuous integration for you on our cloud-managed option or you can run CircleCI behind a firewall on your private infrastructure.</h2>
-      </section>
-      <section class="box-options">
-        <div class="box one">
-          <div class="box-info">
-            <div class="img-container">
-              <img class="html" src="./images/html5.png" alt="">
-            </div>
-            <div class="definition">
-              <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts.</p>
-              <p>It is a new version of the language HTML, with new elements, attributes, and behaviors,</p>
-              <p>and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
-            </div>
-            <div class="box-buttons"> 
-              <button>Learn More</button>
-              <button>Examples</button>
-            </div>
+        <ul class="nav-options">
+          <li class="nav-options__item">
+            <a class="nav-options__link" href="#">Transitions and Transforms</a>
+          </li>
+          <li class="nav-options__item">
+            <a class="nav-options__link" href="#">otros</a>
+          </li>
+          <li class="nav-options__item">
+            <a class="nav-options__link" href="#">Slider</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- /Main Nav -->
+
+    <!-- Sub Nav -->
+    <section class="full-width full-width--subnav">
+      <nav class="container">
+        <ul class="subnav-list">
+          <li class="subnav-list__item">
+            <a class="subnav-list__link" href="#">Option 1</a>
+          </li>
+          <li class="subnav-list__item">
+            <a class="subnav-list__link" href="#">Option 2</a>
+          </li>
+          <li class="subnav-list__item">
+            <a class="subnav-list__link" href="#">Option 3</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- /Sub Nav -->
+  </section>
+
+  <main>
+    <section class="main-info">
+      <h3>HOSTING OPTIONS</h3>
+      <h1>In the Cloud or Behind Your Firewall</h1>
+      <h2>We can host continuous integration for you on our cloud-managed option or you can run CircleCI behind a firewall on
+        your private infrastructure.</h2>
+    </section>
+    <section class="box-options">
+      <div class="box one">
+        <div class="box-info">
+          <div class="img-container">
+            <img class="html" src="./images/html5.png" alt="">
           </div>
-          <hr>
-        </div>
-        <div class="box two">
-          <div class="box-info">
-            <div class="img-container">
-              <img class="css" src="./images/css3.png" alt="">
-            </div>
-            <div class="definition">
-              <p>CSS3 is the latest evolution of the Cascading Style Sheets language.</p>
-              <p>It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts.</p>
-              <p>Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with extreme caution as both their syntax and semantics can change in the future.</p>
-            </div>
-            <div class="box-buttons">
-              <button>Learn More</button>
-              <button>Examples</button>
-            </div>            
+          <div class="definition">
+            <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts.</p>
+            <p>It is a new version of the language HTML, with new elements, attributes, and behaviors,</p>
+            <p>and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
           </div>
-          <hr>
+          <div class="box-buttons">
+            <button>Learn More</button>
+            <button>Examples</button>
+          </div>
         </div>
-      </section>
-    </main>
-  </div>
+        <hr>
+      </div>
+      <div class="box two">
+        <div class="box-info">
+          <div class="img-container">
+            <img class="css" src="./images/css3.png" alt="">
+          </div>
+          <div class="definition">
+            <p>CSS3 is the latest evolution of the Cascading Style Sheets language.</p>
+            <p>It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations,
+              as well as new layouts like multi-columns, flexible box or grid layouts.</p>
+            <p>Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with
+              extreme caution as both their syntax and semantics can change in the future.</p>
+          </div>
+          <div class="box-buttons">
+            <button>Learn More</button>
+            <button>Examples</button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
 </body>
+
 </html>
