@@ -47,8 +47,11 @@ main {
    justify-content: center;
 }
 .box {
-    padding: 25px;
     text-align: center;
+}
+.box-info {
+    padding: 25px; 
+    height: 60%;   
 }
 .one,
 .two {
@@ -57,6 +60,12 @@ main {
     background-color: white;
     margin: 0 1rem 2rem 1rem;
     
+}
+.img-container {
+    height: 100px;
+}
+.definition {
+    min-height: 250px;
 }
 
 .html{
