@@ -1,8 +1,8 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     margin: 0;
     background-color: #f3f3f3;
-    /* font-family: roboto; */
+    font-family: Roboto;
 }
 
 .nav-wrapper {
@@ -45,12 +45,12 @@ ul {
 
 .nav-container {
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1090px;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1090px) {
     .nav-container {
         padding-right: 0;
         padding-left: 0;
@@ -102,40 +102,59 @@ ul {
 
 main {
     margin: 10rem auto 0 auto;
-    max-width: 1024px;
+    max-width: 1090px;
 }
 
 .main-info {
-    width: 80%;
+    width: 85%;
     text-align: center;
     margin: 0 auto;
+}
+.title {
+    color: #27A0B6;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+}
+.description {
+    font-size: 1.2rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 200;
+    color: #555555;
 }
 
 .box-options {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 4rem;
 }  
 .box {
     width: 48%;
-    max-height: 700px;
     text-align: center;
     background-color: white;
-  
+    box-shadow: 0px 0px 19px -10px rgba(179,179,179,1);
+    border-radius: 1px;
 }
 .box-info {
-    padding: 25px;   
+    padding: 40px;   
 }
 
 .img-container {
-    min-height: 100px;
+    min-height: 115px;
 }
 .definition {
-    min-height: 200px;
+    color: #555555;
+    min-height: 240px;
+    line-height: 1.4;
 }
 .box-buttons {
     width: 100%;
-    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .html{
@@ -145,25 +164,49 @@ main {
     width: 65px;
 }
 
-.box-buttons button{
-    width: 45%;
-    height: 40px;
-    margin: 5px;
+.btn{
+    padding: 15px 65px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.primary {
+    background-color: #04AA51;
+    color: #fff;
+    border: 1px solid #04AA51;
 }
 
-.list-container {
+.primary:hover {
+    background-color: #2ABD4A;
+}
+
+.secondary {
+    background-color: #fff;
+    color: #04AA51;
+    border: 1px solid #D8D8D8;
+}
+.secondary:hover {
+    border: 1px solid #04AA51;
+}
+
+.details-container {
     min-height: 150px;
     border-top: 1px solid lightgrey;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 25px 70px;  
     text-align: left;
 }
-.list p {
-    color: grey;
+.details-container-title {
+    color: #898989;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
-.list-items {
+.details-items {
     font-weight: 600;
+    color: #555555;
 }
 
 
